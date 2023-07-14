@@ -1,0 +1,52 @@
+<div id="container">
+  <h3>Discover Our Catalog</h3>
+
+  <app-sample-bar (cardSearch)="searchWithCard($event)"></app-sample-bar>
+
+  <mat-card>
+    <form [formGroup]="sampleForm" class="form">
+      <mat-form-field>
+        <mat-label>SEARCH SOUND</mat-label>
+        <input matInput class="input" formControlName="search" />
+      </mat-form-field>
+      <div id="div-bottone-1">
+        <button id="bottone-1" mat-button (click)="onSampleSearchList()">
+          Go!
+        </button>
+      </div>
+    </form>
+  </mat-card>
+  <div class="first-div">
+    <mat-card class="list-div" *ngFor="let sample of list">
+      <div class="card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-soundwave"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8.5 2a.5.5 0 0 1 .5.5v11a.5.5 0 0 1-1 0v-11a.5.5 0 0 1 .5-.5zm-2 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm4 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zm-6 1.5A.5.5 0 0 1 5 6v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm8 0a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm-10 1A.5.5 0 0 1 3 7v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5zm12 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0V7a.5.5 0 0 1 .5-.5z" />
+        </svg>
+        <h4>{{ sample.name }}</h4>
+        <p>{{ sample.username }}</p>
+
+        <div id="bottoni">
+          <button id="bottone-2" (click)="onDownloadSampleList(sample.id)" mat-button>
+            Download
+          </button>
+          <button id="bottone-3" (click)="onDetailSampleList(sample.id)" mat-button>
+            Details
+          </button>
+          <button id="bottone-4" (click)="addFavuorite(sample)" mat-button>
+            Favourite
+          </button>
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div id="bottoni-2" *ngIf="list.length != 0">
+    <button id="button-previous" mat-button (click)="goBack()" [disabled]="listObj.previous == ''">
+      Previous
+    </button>
+    <button id="button-next" mat-button (click)="goNext()" [disabled]="listObj.next == ''">
+      Next
+    </button>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+#container {
+  background-color: #222a45;
+  padding-top: 100px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+#categorie {
+  display: flex;
+}
+
+#container #categorie div {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  margin-right: 30px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.example-card {
+  background-color: #067eb8;
+  text-align: center;
+}
+
+.bi-soundwave {
+  text-align: center;
+  color: #222a45;
+}
+
+@media screen and (max-width: 390px) {
+  #container #categorie div {
+    display: none;
+  }
+
+  .example-card {
+    display: none;
+  }
+
+  .bi-soundwave {
+    display: none;
+  }
+}

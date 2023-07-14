@@ -1,0 +1,13 @@
+<div id="container">
+  <img [src]="data.images" alt="" />
+  <h2>{{ data.name }}</h2>
+  <p>{{ data.username }}</p>
+  <p>{{ data.description }}</p>
+  <div id="audio-button">
+    <audio controls><source [src]="data.preview" type="audio/mpeg" /></audio>
+    <button id="bottone-download" (click)="onDownload()" mat-button>
+      Download
+    </button>
+    <button id="bottone-chiudi" (click)="onClose()" mat-button>Close</button>
+  </div>
+</div>

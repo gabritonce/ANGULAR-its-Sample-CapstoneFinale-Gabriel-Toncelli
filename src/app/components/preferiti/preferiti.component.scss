@@ -1,0 +1,104 @@
+#container {
+  background-color: #222a45;
+  font-family: "Hanken Grotesk", sans-serif;
+  h1 {
+    padding-top: 250px;
+    padding-bottom: 300px;
+    color: #067eb8;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+}
+
+.first-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+
+  .list-div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 30%;
+    margin-right: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: #067db83a;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    button {
+      background-color: #067eb8;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      background-color: transparent;
+      border: none;
+      svg {
+        color: white;
+        font-size: 30px;
+      }
+
+      h4 {
+        color: white;
+        font-size: 13px;
+        padding-top: 20px;
+        font-weight: bold;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+#bottone-1 {
+  margin-top: 100px;
+  background-color: #067eb8;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 50px;
+}
+
+#bottone-2 {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 390px) {
+  button {
+    background-color: #067eb8;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 20px;
+  }
+
+  h1 {
+    padding-top: 250px;
+    padding-bottom: 300px;
+    color: #067eb8;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: "Hanken Grotesk", sans-serif;
+    line-height: 2em;
+    text-align: center;
+  }
+}

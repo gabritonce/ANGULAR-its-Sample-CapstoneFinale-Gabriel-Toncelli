@@ -1,0 +1,31 @@
+footer {
+  background-color: #067eb8;
+  padding: 50px;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+
+.icone {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #222a45;
+}
+
+.icone svg {
+  margin-right: 15px;
+}
+
+#copy {
+  color: #222a45;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icone a {
+  color: #222a45;
+  text-decoration: none;
+}

@@ -1,0 +1,303 @@
+#container {
+  background-color: #222a45;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.background {
+  background-image: url("../../../assets/img/background.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.riempitivo {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 0;
+}
+.riempitivo img {
+  text-align: center;
+}
+
+#ready {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 130px;
+  line-height: 1em;
+  color: #067eb8;
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin-left: 50px;
+}
+
+.first-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+
+  .list-div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 30%;
+    margin-right: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    background-color: #067db83a;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    #bottoni {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      #bottone-2 {
+        margin-right: 10px;
+      }
+      #bottone-4 {
+        margin-left: 10px;
+      }
+    }
+    button {
+      background-color: #067eb8;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      background-color: transparent;
+      border: none;
+      svg {
+        color: white;
+        font-size: 30px;
+      }
+
+      h4 {
+        color: white;
+        font-size: 13px;
+        padding-top: 20px;
+        font-weight: bold;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+#banner-esplora {
+  background-color: #067db838;
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#banner-esplora h1 {
+  font-size: 40px;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+#banner-esplora button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #067eb8;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#banner-esplora button a {
+  color: white;
+  text-decoration: none;
+}
+#banner-esplora button a:hover {
+  color: white;
+}
+#hr2 {
+  color: white;
+}
+.preview h2 {
+  color: #067eb8;
+  font-size: 60px;
+  font-weight: 200px;
+  font-family: "Hanken Grotesk", sans-serif;
+  padding-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+}
+
+.icone {
+  text-align: center;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  font-size: 25px;
+}
+
+.icone svg {
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.icone p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  line-height: 50px;
+  margin-top: 20px;
+}
+#box {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 390px) {
+  #ready {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-size: 51px;
+    line-height: 1em;
+    color: #067eb8;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    margin: 0;
+    text-align: center;
+  }
+  .preview h2 {
+    color: #067eb8;
+    font-size: 40px;
+    font-weight: 200px;
+    font-family: "Hanken Grotesk", sans-serif;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin: 0;
+    text-align: center;
+    line-height: 1em;
+  }
+
+  .riempitivo {
+    display: none;
+  }
+  .first-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+
+    .list-div {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      width: 35%;
+      margin-right: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      background-color: #067db83a;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      button {
+        background-color: #067eb8;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+        svg {
+          color: white;
+          font-size: 30px;
+        }
+
+        h4 {
+          color: white;
+          font-size: 13px;
+          padding-top: 20px;
+          font-weight: bold;
+        }
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+
+  #banner-esplora {
+    background-color: #067db838;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  #banner-esplora h1 {
+    font-size: 30px;
+    font-family: "Hanken Grotesk", sans-serif;
+    color: #ffffff;
+    padding-top: 30px;
+  }
+
+  .icone {
+    text-align: center;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    font-size: 25px;
+    display: flex;
+  }
+
+  .icone svg {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+  }
+  .icone p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    line-height: 50px;
+    margin-top: 20px;
+  }
+  .mission {
+    display: none;
+  }
+  #box {
+    display: none;
+  }
+
+  #bottone-4 {
+    display: none;
+  }
+
+
+  #hr2 {
+    color: white;
+    margin: 0;
+  }
+}

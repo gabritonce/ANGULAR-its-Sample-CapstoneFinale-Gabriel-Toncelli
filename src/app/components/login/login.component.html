@@ -1,0 +1,21 @@
+<div id="container">
+  <mat-card>
+    <form [formGroup]="loginForm" class="form">
+      <h2>SignIn</h2>
+      <div id="div-bottone-1">
+        <button id="bottone-1" mat-button (click)="onGoToFreeSound()">
+        Authentication on Freesound
+        </button>
+      </div>
+      <mat-form-field>
+        <mat-label>Authentication Code </mat-label>
+
+        <input matInput class="input" formControlName="code" />
+        <mat-error>campo obligatorio</mat-error>
+      </mat-form-field>
+      <div id="div-bottone-2">
+        <button id="bottone-2" mat-button (click)="onLogin()">LogIn</button>
+      </div>
+    </form>
+  </mat-card>
+</div>

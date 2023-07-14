@@ -1,0 +1,106 @@
+#container {
+  background-color: #222a45;
+  display: flex;
+  justify-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+  text-align: center;
+  padding-top: 115px;
+  padding-bottom: 115px;
+}
+
+.form {
+  border-radius: 20px;
+}
+.form h2 {
+  color: #067eb8;
+  font-size: 30px;
+}
+mat-form-field {
+  width: 80%;
+  button {
+    border-radius: 10px;
+    font-family: "Hanken Grotesk", sans-serif;
+  }
+}
+
+#div-bottone-1 {
+  text-align: center;
+}
+
+#bottone-1 {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #067eb8;
+  color: white;
+}
+
+#bottone-2 {
+  font-size: 15px;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #067eb8;
+  color: white;
+}
+
+mat-card {
+  width: 30%;
+  padding: 30px;
+}
+
+@media screen and (max-width: 390px) {
+  #container {
+    background-color: #222a45;
+    display: flex;
+    justify-content: center;
+    font-family: "Hanken Grotesk", sans-serif;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .form {
+    border-radius: 20px;
+  }
+  .form h2 {
+    color: #067eb8;
+    font-size: 30px;
+  }
+  mat-form-field {
+    width: 80%;
+    button {
+      border-radius: 10px;
+      font-family: "Hanken Grotesk", sans-serif;
+    }
+  }
+
+  #div-bottone-1 {
+    text-align: center;
+  }
+
+  #bottone-1 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #067eb8;
+    color: white;
+  }
+
+  #bottone-2 {
+    font-size: 15px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #067eb8;
+    color: white;
+  }
+
+  mat-card {
+    width: 80%;
+    padding: 50px;
+  }
+}

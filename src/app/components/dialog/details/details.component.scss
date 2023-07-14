@@ -1,0 +1,56 @@
+#container {
+  font-family: "Hanken Grotesk", sans-serif;
+  h2 {
+    color: #067eb8;
+  }
+  p {
+    color: #067eb8;
+  }
+
+  #audio-button {
+    display: flex;
+
+    button {
+      background-color: #067eb8;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 20px;
+    }
+    #bottone-chiudi {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  img {
+    width: 70%;
+  }
+  #audio-button {
+    display: flex;
+
+    audio {
+      display: none;
+    }
+    button {
+      background-color: #067eb8;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 20px;
+    }
+    #bottone-download {
+      display: none;
+    }
+    #bottone-chiudi {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
