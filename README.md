@@ -2,6 +2,7 @@ IT’S SAMPLE -
 A useful platform for music producers worldwide to download samples, to use in their own productions. Through the app, users will be able to access and draw from the immense database of FreeSound. Before deciding to download a sample, they can listen to a preview and read a brief description of the sample. A special section has been created to save our favorite sounds, with a maximum limit of 10, and these can be re-downloaded at any time.
 
 Implementation and startup:
+
 1 ) npm i (to install project dependencies)
 
 2) npm i ngx-cookie-service (to save data in cookies)
